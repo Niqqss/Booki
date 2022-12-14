@@ -1,0 +1,144 @@
+.searchbar-and-filters-container {
+    margin: 0 3.4375rem;
+}
+
+.main-subtitle {
+    margin-bottom: 1.25rem;
+}
+
+/* SEARCH BAR */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    height: 3.125rem;
+    margin-bottom: 2rem;
+}
+
+.pinpoint-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--clr-secondary);
+    width: 3.125rem;
+    height: 100%;
+}
+
+.my-search {
+    padding-left: 1rem;
+    color: black;
+    border: none;
+    border-top: 1px solid var(--clr-secondary);
+    border-bottom: 1px solid var(--clr-secondary);
+    outline: none;
+    height: 100%;
+    font-weight: bold;
+}
+
+.search-button {
+    background-color: var(--clr-primary);
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.search-button:hover {
+    transform: translateX(-5px);
+}
+
+.visible-on-mobile {
+    display: none;
+}
+
+/* FILTERS */
+
+.filters-container {
+    margin-bottom: 2.1875rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filters-button {
+    background: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 1rem;
+    display: flex;
+    gap: .5em;
+    font-weight: bold;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.filters-button .fa-solid {
+    color: var(--clr-primary);
+}
+
+.filters-button:hover {
+    background-color: #DEEBFF;
+}
+
+/* INFO */
+
+.info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.1875rem;
+    gap: 1rem;
+}
+
+.info-icon-wrapper {
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+    padding: .75rem;
+    color: var(--clr-primary);
+}
+
+@media screen and (max-width: 767px) {
+    .searchbar-and-filters-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 1.25rem;
+    }
+
+    .main-subtitle {
+        width: 100%;
+    }
+
+    .visible-on-mobile {
+        display: block;
+    }
+
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    .filters-container {
+        flex-wrap: wrap;
+    }
+
+    .filters-container span {
+        width: 100%;
+    }
+
+    .filters-button {
+        width: calc((100% / 2) - ((1rem*2)/2));
+        max-width: 50%;
+    }
+
+    .info-container {
+        align-items: flex-start;
+    }
+}

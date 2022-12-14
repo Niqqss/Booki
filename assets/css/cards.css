@@ -1,0 +1,105 @@
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    transition: .2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.accomodations-card,
+.popular-card {
+    padding: 0.375rem;
+}
+
+.card p {
+    font-size: 0.875rem;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.card i:not(:nth-last-child(1)) {
+    color: var(--clr-primary);
+}
+
+.card i:nth-last-child(1) {
+    color: var(--clr-secondary);
+}
+
+.accomodations-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    margin: 0 2.5rem;
+}
+
+.accomodations-card {
+    width: calc((100% / 3) - ((1.875rem*2)/3));
+}
+
+.accomodations-card figure {
+    margin: 0;
+}
+
+.accomodations-card img {
+    border-radius: 20px 20px 0 0;
+    height: 7.75rem;
+    object-fit: cover;
+}
+
+.accomodations-text-container {
+    margin: .5rem 0 0 .5rem;
+}
+
+.popular-cards-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5rem;
+    gap: 1.875rem;
+}
+
+.popular-card {
+    flex: 1;
+}
+
+.popular-card-wrapper figure {
+    display: flex;
+    margin: 0;
+}
+
+.popular-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0 0 1rem;
+}
+
+.popular-text-container div {
+    margin-top: auto;
+}
+
+.popular-card-wrapper img {
+    border-radius: 20px 0 0 20px;
+    height: 9rem;
+    width: 40%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+    .popular-cards-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .accomodations-card {
+        width: 100%;
+    }
+
+    .popular-cards-container {
+        flex-direction: column;
+    }
+}

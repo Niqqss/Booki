@@ -1,0 +1,33 @@
+footer {
+    margin: 2.5rem 3.125rem 0 3.125rem;
+    background-color: var(--clr-secondary);
+    padding: 2.8rem;
+}
+
+.footer-content-container {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-list li:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+
+    footer {
+        margin: 0;
+    }
+
+    .footer-content-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,70 @@
+.header-container {
+    margin: 0 3.4375rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 1.5rem;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 2rem;
+    color: black;
+    border-top: 2px solid transparent;
+    /* bordure transparente pour ne pas ajouter de contenu au hover */
+    transition: .2s;
+}
+
+.nav-link:hover {
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        margin-top: 1.25rem;
+    }
+
+    .logo {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid transparent;
+        transition: .2s;
+    }
+
+    .nav-link {
+        border-top: none;
+    }
+
+    .nav-list-item:hover {
+        border-color: var(--clr-primary);
+    }
+
+    .header-container {
+        margin: unset;
+    }
+}

@@ -1,0 +1,53 @@
+.activities-container {
+    margin: 3.75rem 3.125rem 0 3.125rem;
+}
+
+.activities-container h2 {
+    margin-bottom: 1.25rem;
+}
+
+.activities-card-container {
+    display: flex;
+    gap: 2.75rem;
+}
+
+.activities-card {
+    flex: 1;
+    border-radius: 20px;
+}
+
+.activities-card figure {
+    position: relative;
+    margin: 0;
+    height: 100%;
+}
+
+.activities-card img {
+    border-radius: 20px 20px 25px 25px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activities-card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.activities-card h3 {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .activities-card-container {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .activities-card img {
+        max-height: 11.5rem;
+    }
+}
