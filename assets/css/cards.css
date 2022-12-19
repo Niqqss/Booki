@@ -9,7 +9,7 @@
     transform: scale(1.01);
 }
 
-.accomodations-card,
+.accommodations-card,
 .popular-card {
     padding: 0.375rem;
 }
@@ -30,24 +30,24 @@
     color: var(--clr-secondary);
 }
 
-.accomodations-cards-container {
+.accommodations-cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.875rem;
     margin: 0 2.5rem;
 }
 
-.accomodations-card {
+.accommodations-card {
     width: calc((100% / 3) - ((1.875rem*2)/3));
 }
 
-.accomodations-card img {
+.accommodations-card img {
     border-radius: 20px 20px 0 0;
     height: 7.75rem;
     object-fit: cover;
 }
 
-.accomodations-text-container {
+.accommodations-text-container {
     margin: .5rem 0 0 .5rem;
 }
 
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .accomodations-card {
+    .accommodations-card {
         width: 100%;
     }
 

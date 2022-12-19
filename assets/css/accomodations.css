@@ -1,24 +1,24 @@
-.accomodations-and-popular-container {
+.accommodations-and-popular-container {
     display: flex;
     gap: 2.5rem;
     margin: 0 3.125rem;
 }
 
-.accomodations-container,
+.accommodations-container,
 .popular-container {
     padding: 2.625rem 0;
 }
 
-.accomodations-and-popular-container a {
+.accommodations-and-popular-container a {
     color: black;
 }
 
-.accomodations-container h2 {
+.accommodations-container h2 {
     margin-bottom: 1.5rem;
     margin-left: 2.5rem;
 }
 
-.accomodations-container {
+.accommodations-container {
     display: flex;
     flex-direction: column;
     background-color: var(--clr-secondary);
@@ -55,14 +55,14 @@
 }
 
 @media screen and (max-width: 991px) {
-    .accomodations-and-popular-container {
+    .accommodations-and-popular-container {
         flex-direction: column;
         width: 100%;
         margin: 0;
         padding: 0 3.4375rem;
     }
 
-    .accomodations-container,
+    .accommodations-container,
     .popular-container {
         width: 100%;
     }
@@ -73,19 +73,19 @@
 }
 
 @media screen and (max-width: 767px) {
-    .accomodations-and-popular-container {
+    .accommodations-and-popular-container {
         flex-direction: column-reverse;
         gap: 0;
         padding: 0;
     }
 
-    .accomodations-container,
+    .accommodations-container,
     .popular-container {
         width: 100%;
         border-radius: 0;
     }
 
-    .accomodations-container {
+    .accommodations-container {
         background-color: white;
     }
 
