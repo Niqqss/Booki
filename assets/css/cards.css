@@ -41,10 +41,6 @@
     width: calc((100% / 3) - ((1.875rem*2)/3));
 }
 
-.accomodations-card figure {
-    margin: 0;
-}
-
 .accomodations-card img {
     border-radius: 20px 20px 0 0;
     height: 7.75rem;
@@ -66,9 +62,8 @@
     flex: 1;
 }
 
-.popular-card-wrapper figure {
+.popular-card-wrapper {
     display: flex;
-    margin: 0;
 }
 
 .popular-text-container {

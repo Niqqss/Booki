@@ -1,12 +1,12 @@
+:root {
+    --clr-primary: #0065FC;
+    --clr-secondary: #F2F2F2;
+}
+
 *,
 *:before,
 *:after {
     box-sizing: border-box;
-}
-
-:root {
-    --clr-primary: #0065FC;
-    --clr-secondary: #F2F2F2;
 }
 
 body {

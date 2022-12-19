@@ -1,7 +1,7 @@
 footer {
     margin: 2.5rem 3.125rem 0 3.125rem;
     background-color: var(--clr-secondary);
-    padding: 2.8rem;
+    padding : 2rem 2rem 1rem 3.5rem;
 }
 
 .footer-content-container {
@@ -17,7 +17,11 @@ footer {
     list-style-type: none;
 }
 
-.footer-list li:hover {
+.footer-item {
+    padding-bottom : .5rem;
+}
+
+.footer-item a:hover {
     text-decoration: underline;
 }
 
