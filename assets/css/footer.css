@@ -1,7 +1,7 @@
 footer {
     margin: 2.5rem 3.125rem 0 3.125rem;
     background-color: var(--clr-secondary);
-    padding : 2rem 2rem 1rem 3.5rem;
+    padding: 2rem 2rem 1rem 3.5rem;
 }
 
 .footer-content-container {
@@ -18,7 +18,7 @@ footer {
 }
 
 .footer-item {
-    padding-bottom : .5rem;
+    padding-bottom: .5rem;
 }
 
 .footer-item a:hover {
